@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 17px;
+    background-image: url('images/blackcarbon.jpg');
+    padding: 0 50px;
+    
+}
+
+.profile {
+    text-align: center;
+    background-color:skyblue;
+    padding: 50px;
+}
+
+.family {  
+    text-align: center;
+    image-rendering: auto;
+}
+
+.links {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+}
+
+main {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    padding: 50px;
+}
+
+.logo {
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: rgb(191, 231, 247);
+    border-bottom: 1px solid rgb(191, 231, 247);
+}
+
+.tutorial a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 10%;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+}
+
+.tutorial ol {
+    list-style-type: upper-roman;
+    margin-left: 25px;
+}
+
+
+#weapons, td, th {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;    
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+}
+
+th {
+    width: 250px;
+    height: 35px;
+}
+
+#modlist {
+    text-align:center;
+    list-style-position: inside;
+    list-style-type:lower-roman;
+}
+
+mark.stasis {
+    color:rgb(85, 109, 247);
+    background: none;
+}
+
+mark.shard {
+    color:rgb(160, 201, 235);
+    background: none;
+}
+
+mark.well {
+    color: green;
+    background: none;
+}
+
+mark.charge {
+    color: yellow;
+    background: none;
+}
+
+.FullBuild {
+    border: 1px solid skyblue;
+    padding: 0px;
+    object-fit: contain;     
+    display:block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#behemothPicture {
+    text-align:center;
+    image-rendering:auto;
+}
+
+.modimage {
+    opacity: 1;
+    display: inline;
+    width: auto;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    text-align:center;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width:100%;
+    display: block;
+}
+
+.container:hover .modimage {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+.clips {
+    height: 400px;
+    width: 600px;
+    border: 1px solid skyblue;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.clipscontainer {
+    font-size: 12px;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.gifs {
+    display: flex;
+}
+
+.gifs img {
+    display: block;
+    margin-right: 10px;
+}
+
+.gifs p {
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align:text-bottom;
+}
+
+.gifs2 {
+    display:flex;
+}
+
+.gifs2 img {
+    display: block;
+    order: 2;
+    margin-left:10px;
+}
+
+.gifs2 p { 
+    margin-top: auto;
+    margin-bottom:auto;
+    vertical-align: text-bottom;
+}
+
+.revisions ol {
+    margin-left:35px;
+}
+
+.thumbnail img {
+    border: 1px solid skyblue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 450px;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    }
+
+.sidebar {
+    position:fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-image: url('images/blackcarbon.jpg');
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    font-size: 22px;
+    color: black;
+    text-align:center;
+    line-height: 70px;
+    background-color: skyblue;
+    user-select: none;
+
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+    color: white;
+    box-sizing: border-box;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    transition: .5s;
+}
+
+ul li:hover a{
+    padding-left: 40px;
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: fixed;
+    cursor: pointer;
+    background: none;
+    border: 1px;
+}
+
+label #btn {
+    left: 10px;
+    top: 10px;
+    font-size: 35px;
+    padding: 0px;
+    transition: all .5s ease;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 200px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+
+#check:checked ~ .profile {
+    margin-left: 195px;
+    transition: all 0.5s ease;
+}
+
+#check:checked ~ main {
+    margin-left: 250px;
+    transition: all 0.5s ease;
+}
