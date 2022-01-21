@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kristofer Roldan</title>
+    <meta name="author" content="Kristofer's Home Page">
+    <meta name="description" content="Informational page for Learn to Code project">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/Behemoth.png">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <img src="images/sidebar.png" height="25" width="25" class="fas fa-bars" id="btn">
+        <i class="fas fa-bars" id="btn"></i>
+
+        <img src="images/exbutton.png" height="25" width="25" class="fas fa-times" id="cancel">
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header class="links">Links</header>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-link"></i>About Me</a></li>
+            <li><a href="tutorials.html"><i class="fas fa-link"></i>Tutorial</a></li>
+            <li><a href="revisions.html"><i class="fas fa-link"></i>Revisions</a></li>
+        </ul>
+    </div>
+
+<header class="profile">
+    <h1>Kristofer W. Roldan</h1>
+    <figure> 
+        <img src="images/PFP.jpg" height="200" width="200" alt="Kristofer wearing a suit"/>
+        <figcaption><b>Supervisor and Trainer, Video Game Enjoyer.</b></figcaption>
+    </figure>
+
+</header>
+ <br>
+ <main class="tutorial">
+    <hr>
+    <h2 style="text-align: center">Tutorial</h2>
+    <hr>
+    <br>
+    <p>
+        My greatest passion in life is sharing knowledge with others. Historically, 
+        I've taught using in-person presentations, step-by-step guides, and with 
+        the recent move to work from home, Microsoft OneNote notebooks to assist 
+        my coworkers and employees. Today, we'll be doing something a bit more exciting. 
+        In this section, I'll take you through how I create a guide by referencing
+        one of the video games I play, <a href="https://en.wikipedia.org/wiki/Destiny_2" target="_blank">
+        Destiny 2</a>.
+    </p>
+    
+    <br>
+
+    <p> 
+        With any guide I create, my first focus is the <b>purpose</b> of the guide. 
+        <i>"What do I hope my reader will be able to achieve upon completion of this 
+        guide?"</i> For my professional life, I aspire to have the employee 
+        perform the task as seamlessly as possible. In our example, we'll be
+        arming a player with an arsenal to defeat numerous enemies at once
+        with plenty of defensive capabilities. 
+    </p>
+
+    <br>
+
+    <p> 
+        Here's where we set off into uncharted waters with our beloved reader. When 
+        creating a guide, I like to start with a teaser to show the reader:
+        <i>"When you are done with this tutorial, this is what you'll be able to do."</i>
+        
+        <br>
+        <br>
+    </p>
+
+        <video class="FullBuild" width="700" height="400" controls> 
+            <source src="clips/FullBuild.mp4" type="video/mp4"></video>
+            
+        <br>
+        <br>
+
+        <p>
+            Let's get started. We'll be discussing the following with our player:
+        <br>
+        <br>
+            <ol type="I">
+                <li><a href="#weapons">Weapons</a></li>
+                <li><a href="#subclass">Class and Subclass</a></li>
+                <li><a href="#mods">Mods</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ol>
+        <br>
+        <br>
+
+        </p>
+        It is imperative we gain our reader's trust. To do this, 
+        we'll provide information followed immediately by preemptively answering 
+        questions that may be thought of subsequently. First, let's tell our 
+        reader which weapons we'll be using. Naturally, the next question is: 
+        <i>"How do I obtain that weapon?"</i> or <i>"What does that weapon do?"</i>
+        which we will answer within the table.
+    </p>
+    
+    <br>
+
+    <h3 style="text-align: center">I. Weapons</h3>
+    
+    <br>
+    <br>
+    
+<!-- BEGIN TABLE OF WEAPONS HERE -->
+
+        <table id="weapons">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Weapon Name</th>
+                    <th>Source</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> <img src="images/headstone.png" width="500" alt="Photo of Eyasluna"/></td>
+                    <td>Eyasluna</td>
+                    <td><a href="https://www.destinypedia.com/Grasp_of_Avarice" 
+                        target="_blank">Grasp of Avarice Dungeon</a> </td>
+                    <td>This will be our bread and butter weapon and used very 
+                    frequently. It deals <mark class="stasis">Stasis</mark> damage and 
+                    has the perk <b>Headstone</b>, where a precision final blow spawns
+                    a <mark class="stasis">Stasis crystal</mark> at the victim's 
+                    location. More on this later. 
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="images/cloudstrike.png" width="500"/></td>
+                    <td>Cloudstrike</td>
+                    <td><a href="https://d2.destinygamewiki.com/wiki/Empire_Hunt" 
+                        target="_blank">Completing Empire Hunts</a></td>
+                    <td>Cloudstrike will be our halfway point between dealing damage
+                        to bosses and clearing out multiple, low health enemies. This
+                        sniper rifle creates a lightning storm upon a precision final
+                        blow at the target's location. 
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="images/zephyr.png" width="500"/></td>
+                    <td>Zephyr</td>
+                    <td><a href="https://d2.destinygamewiki.com/wiki/A_Gift_in_Return" 
+                        target="_blank">Gifts in Return from Dawning Event</a></td>
+                    <td>Zephyr will be how we deal with high health enemies. This
+                        sword deals <mark class="stasis">Stasis</mark> damage and 
+                        deals a lot of damage in a short period of time with its 
+                        heavy attack.
+                    </td>        
+                </tr>
+            </tbody>
+
+        </table>
+
+<!-- BEGIN CLASS AND SUBCLASS HERE -->
+<div id="subclass">
+    <br>
+    <br>
+
+    <h3 style="text-align: center">II. Class and Subclass</h3>
+
+    <br>
+    <br>
+
+    <p>
+        Now, the reader knows which weapons we are using, what they do, and where to
+        obtain them... but what about the rest of the moves we were doing in the video?
+        Let us offer a second piece of the puzzle. We are using the <b>Titan</b> class on the 
+        <b>Behemoth</b> subclass, specifically. This subclass uses the <mark class="stasis">
+        Stasis</mark> element to freeze and shatter enemies.
+    </p>
+    
+    <br>
+
+    <figure id="behemothPicture">
+        <img src="images/subclass.png" width="700" height="450">
+    </figure>
+
+    <br>
+
+    <p>
+        Once in the subclass screen, navigate over the abilities and select the 
+        the following:
+    
+    <br>
+    <br>
+
+    <b>Abilities</b>
+        <ol>
+            <li><a href="https://www.light.gg/db/items/1399217/glacier-grenade/"
+                target="_blank">Glacier Grenade</a>: a grenade that creates five 
+                <mark class="stasis">Stasis crystals</mark> at targeted location
+                and can be shattered for damage.</li>
+        </ol>
+    
+    <br>
+    
+    <b>Aspects</b>
+        <ol>
+            <li><a href="https://www.light.gg/db/items/3866705246/diamond-lance/"
+                target="_blank">Diamond Lance</a>: defeating a target with 
+                <mark class="stasis">Stasis</mark> damage creates a Diamond Lance
+                at their body. The Diamond Lance can be picked up and thrown at enemies
+                to freeze and deal damage in an area.
+            </li>
+            <li><a href="https://www.light.gg/db/items/2031919264/tectonic-harvest/"
+                target="_blank">Tectonic Harvest</a>: shattering a <mark class="stasis">
+                    Stasis crystal</mark> creates a <mark class="shard">Stasis Shard</mark> 
+                    which grants melee energy when picked up by you or your allies.
+                </mark></li>
+        </ol>
+    
+    <br>
+
+    <b>Fragments</b>
+        <ol>
+            <li><a href="https://www.light.gg/db/items/3469412975/whisper-of-shards/"
+            target="_blank">Whisper of Shards</a>: shattering a <mark class="stasis">Stasis
+            </mark>crystal temporarily boosts your grenade recharge rate.</li>
+
+            <li><a href="https://www.light.gg/db/items/3469412971/whisper-of-fissures/"
+            target="_blank">Whisper of Fissures</a>: increase the damage and size
+            of the burst when you destroy a <mark class="stasis">Stasis crystal</mark>.</li>
+
+            <li><a href="https://www.light.gg/db/items/2483898430/whisper-of-rime/"
+            target="_blank">Whisper of Rime</a>: collecting a <mark class="shard">Stasis
+            Shard</mark> grants a small amount of overshield for a brief time.</li>
+
+            <li><a href="https://www.light.gg/db/items/2483898429/whisper-of-conduction/"
+            target="_blank">Whisper of Conduction</a>: nearby <mark class="shard">
+            Stasis Shards</mark> track to your position.</li>
+
+            <li><a href="https://www.light.gg/db/items/537774540/whisper-of-chains/"
+            target="_blank">Whisper of Chains</a>: while you are near frozen targets or
+            a friendly <mark class="stasis">Stasis crystal</mark>, you take reduced
+            damage from enemies.</li>
+            
+    </p>
+    </div>
+
+    <br>
+    <br>
+
+<!--BEGIN MODS HERE-->
+
+<div id="mods">
+
+    <h3 style="text-align: center">III. Mods</h3>
+
+    <br>
+    <br>
+
+    <p>
+        At this point, our reader has been told what weapons to use and which class,
+        subclass, and abilities to select. During the tutorial process, I like to connect some dots
+        for the reader and let him or her do the rest once he or she is comfortable. With 
+        this section, we'll place the final dots and then begin connecting them together.
+        We've already planted the ideas in their mind by calling out <mark class="stasis">
+        Stasis crystals</mark> and <mark class="shard">Stasis shards</mark>. Let's double
+        down on that now.
+        </mark>
+    </p>
+
+    <br>
+    <br>
+
+    <ol type="i" id="modlist">
+    <li> Elemental Shards
+    <div class="container">
+        <a href="https://www.light.gg/db/items/1977242752/elemental-shards/"
+        target="_blank">
+        <img src="images/elementalshards.png" alt="Elemental Shards" class="modimage">
+        </a>    
+        <div class="middle">
+            <div class="text"><mark class="shard">Stasis shards</mark> 
+            count as <mark class="stasis">Stasis</mark> <mark class="well">elemental wells</mark> for you.</div>
+        </div>
+    </div>
+    </li>
+
+    <li>Elemental Charge
+    <div class="container">
+        <a href="https://www.light.gg/db/items/3730619869/elemental-charge/"
+        target="_blank">
+        <img src="images/elementalcharge.png" alt="Elemental Charge" class="modimage">
+        </a>
+        <div class="middle">
+            <div class="text">
+                Become <mark class="charge">Charged with Light</mark>
+                by picking up an <mark class="well">elemental well</mark>.
+            </div>
+        </div>
+    </div>
+    </li>
+
+    <li>Protective Light
+        <div class="container">
+            <a href="https://www.light.gg/db/items/3523075120/protective-light/"
+            target="_blank">
+            <img src="images/protectivelight.png" alt="Protective Light" class="modimage">
+            </a>
+            <div class="middle">
+                <div class="text">
+                    When <mark class="charge">Charged with Light</mark>, you gain
+                    significant damage resistance when your shields are destroyed. 
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <li>Font of Might
+        <div class="container">
+            <a href="https://www.light.gg/db/items/1740246051/font-of-might/"
+            target="_blank">
+            <img src="images/fontofmight.png" alt="Font of Might" class="modimage">
+            </a>
+            <div class="middle">
+                <div class="text">
+                    Picking up an <mark class="well">elemental well</mark> 
+                    that matches your subclass energy type grants a temporary bonus
+                     to weapon damage of that same elemental type. 
+                </div>
+            </div>
+        </div>
+    </li>
+    </ol>
+    <br>
+    <br>
+
+    <p>
+        If this guide was an instruction manual to assemble furniture, what we have covered
+        thus far is equivalent to the "Parts" section. Now, onto the actual "Assembly"
+        so to speak. This is where the magic happens. With our reader's mind primed with 
+        certain ideas, we can show how everything will string together. Let's discuss my 
+        favorite part, <b>gameplay</b>.
+
+    </p>
+</div>
+
+<br>
+<br>
+
+<!-- ENTER GAMEPLAY HERE -->
+
+<div id="gameplay">
+
+    <h3 style="text-align:center;">IV. Gameplay</h3>
+
+    <br>
+    <br>
+
+    <p>
+        Ladies and gentlemen, this is what you've come for. Our objective is simple:
+        to freeze and shatter as many targets as possible using our variety of 
+        <mark class="stasis">Stasis</mark> damaging capabilities. 
+    </p>
+
+    <br>
+    <br>
+    
+    <div class="gifs">
+        <img src="clips/Shards.gif" alt="Shattering crystal grenade for shards"
+        class="clips">
+    
+    <p>
+        The mods we went over are primarily based on creating and picking up 
+        <mark class="shard">Stasis shards </mark> to increase our damage with <b>Font
+        of Might</b>, increase our damage resistance with Protective Light, and 
+        give us bonus health in the form of an overshield. The quickest way to
+        begin is by using our Glacier Grenade and shattering the crystals with the
+        Titan's <b>Barricade</b> ability. Thanks to <b>Whisper of Shards</b>,
+        our grenade will regenerate much more quickly. So if we're expecting a fight, we'll
+        do this first.
+    </p>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="gifs2">
+    <img src="clips/headstone.gif" alt="Headstone perk in action"
+    class="clips">
+
+    <p>
+        Once our mods are kickstarted, we'll begin the slaying with Eyasluna and Headstone. As mentioned 
+        in the <a href="#weapons">Weapons</a> section, Headstone spawns a <mark class="stasis">Stasis crystal
+        </mark> at the vicitm's location when defeated with a headshot. We can then shoot
+        that crystal to deal damage to all enemies in the vicinity. 
+    </p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="gifs">
+        <img src="clips/DiamondLance.gif" alt="Diamond Lance destroying enemies"
+        class="clips">
+
+    <p>
+        As discussed in the <a href="#subclass">Abilities</a> section, any targets
+        defeated by <mark class="stasis">Stasis</mark> damage (e.g. using our
+        Eyasluna, defeating enemies by destroying <mark class="stasis">Stasis
+        crystals</mark>, etc.) spawns a Diamond Lance. 
+        This powerful tool can clear multiple enemies in one attack.
+    </p>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="gifs2">
+        <img src="clips/Cloudstrike.gif" alt="Cloudstrike defeating enemies"
+        class="clips">
+    <p> 
+        If we need to dispose of multiple enemies from a safe distance, Cloudstrike
+        has us covered. This weapon can clear multiple enemies with a headshot.
+    </p>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+    <div class="gifs">
+        <img src="clips/Zephyr.gif" alt="Zephyr slashing an enemy"
+        class="clips">
+        <p> 
+            If there is an enemy with a lot of health or someone who is too close 
+            for comfort, we can use the Zephyr to dispose of the target quickly with
+            a powerful slash (or two).
+        </p>
+    </div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<hr>
+<br>
+<div id="conclusion">
+
+    <h3 style="text-align:center;">V. Conclusion</h3>
+    <br>
+    <p>
+        With the build we've created together, we've shown our reader what the critical
+        components are. We discussed the weapons and provided sources on how to obtain them,
+        which class and subclass to use with corresponding abilities, which mods to equip
+        in your armor to gain their benefits, and shown what the build can do in short 
+        demonstrations, as well as a full video of how it all comes together at the top. 
+    </p>
+    <br>
+    <p>
+        For our reader, the fun has just begun. Now they can set foot out into the world
+        and slay countless enemies with a strong build balancing potent offense and 
+        reliable defense. As for us, with the Behemoth Titan build complete, our 
+        job is complete. Thanks for coming along and creating this guide with me.
+        I hope you enjoyed reading as much as I enjoyed writing it!
+    </p>
+
+</div>
+    </main>
+   
+
